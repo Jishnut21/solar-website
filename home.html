@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RSM Renewable Energy Solutions | Solar & CCTV Installation in Tamil Nadu</title>
+  <meta name="description" content="RSM Renewable Energy Solutions – Trusted solar EPC and CCTV installation across Tamil Nadu: rooftop solar, surveillance systems, AMC & maintenance, quick support." />
+  <meta name="theme-color" content="#2e7d32" />
+  <meta property="og:title" content="RSM Renewable Energy Solutions" />
+  <meta property="og:description" content="Solar & CCTV installation across Tamil Nadu" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/logo.png" />
+  <link rel="icon" href="./assets/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root{
+      --green:#2e7d32;
+      --green-light:#4caf50;
+      --orange:#f57c00;
+      --orange-light:#ff9800;
+      --text:#222;
+      --muted:#555;
+      --light:#f8f9fa;
+      --radius:12px;
+      --shadow:0 4px 12px rgba(0,0,0,0.08);
+      --transition: all 0.3s ease;
+    }
+    
+    *{box-sizing:border-box; margin:0; padding:0;}
+    
+    html,body{
+      background:#fff;
+      color:var(--text);
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      line-height:1.6;
+      scroll-behavior: smooth;
+    }
+    
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    
+    .container{width:min(1200px,92%);margin-inline:auto}
+    
+    /* Header & Navigation */
+    header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom:2px solid var(--green);
+      transition: var(--transition);
+    }
+    
+    nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:.8rem 0;
+    }
+    
+    .brand{
+      display:flex;
+      gap:.7rem;
+      align-items:center;
+      font-weight:800;
+      letter-spacing:.3px;
+      color:var(--green);
+    }
+    
+    .brand img{height:52px}
+    
+    .links{
+      display:flex;
+      gap:1rem;
+    }
+    
+    .links a{
+      padding:.5rem .7rem;
+      border-radius:8px;
+      color:var(--green);
+      font-weight:600;
+      transition: var(--transition);
+      position: relative;
+    }
+    
+    .links a:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      background-color: var(--orange);
+      transition: var(--transition);
+    }
+    
+    .links a:hover{
+      color: var(--orange);
+    }
+    
+    .links a:hover:after {
+      width: 80%;
+      left: 10%;
+    }
+    
+    .mobile-toggle{display:none}
+    
+    /* Hero Section with Background Image */
+    .hero{
+      padding:6rem 0 4rem;
+      text-align:center;
+      position: relative;
+      overflow: hidden;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 0;
+    }
+    
+  .hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('assets/hero.png'); /* <-- Use this correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(46, 125, 50, 0.85) 0%, rgba(76, 175, 80, 0.75) 100%);
+      z-index: -1;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      color: white;
+    }
+    
+    .hero h1{
+      font-size:clamp(2.2rem,5vw,3.5rem);
+      margin:.5rem 0;
+      color: white;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    
+    .hero p{
+      color: rgba(255,255,255,0.9);
+      font-size:1.2rem;
+      max-width:700px;
+      margin:1rem auto 2rem;
+      text-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    }
+    
+    .btn{
+      display:inline-block;
+      background:var(--green);
+      color:#fff;
+      padding:.9rem 1.8rem;
+      border-radius:var(--radius);
+      font-weight:700;
+      margin:.5rem;
+      transition: var(--transition);
+      border: 2px solid var(--green);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    
+    .btn:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: var(--orange);
+      transition: var(--transition);
+      z-index: -1;
+    }
+    
+    .btn:hover:before {
+      left: 0;
+    }
+    
+    .btn:hover{
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+    
+    .btn.secondary{
+      background:var(--orange);
+      border-color: var(--orange);
+    }
+    
+    .btn.secondary:before {
+      background: var(--green);
+    }
+    
+    section{
+      padding:4rem 0;
+    }
+    
+    h2{
+      font-size:clamp(1.8rem,3.5vw,2.5rem);
+      margin:0 0 1rem;
+      text-align:center;
+      color:var(--orange);
+      position: relative;
+      display: inline-block;
+    }
+    
+    h2:after {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 4px;
+      background: var(--green);
+      bottom: -10px;
+      left: 20%;
+      border-radius: 2px;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .sub{
+      text-align:center;
+      color:var(--muted);
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .grid{
+      display:grid;
+      gap:1.5rem;
+    }
+    
+    .services{
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    }
+    
+    .card{
+      background:#fff;
+      border-radius:var(--radius);
+      padding:2rem 1.5rem;
+      text-align:center;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      border-top: 4px solid var(--green);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background: linear-gradient(to bottom, var(--green-light), var(--green));
+      opacity: 0.05;
+      transition: var(--transition);
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .card:hover:before {
+      height: 100%;
+    }
+    
+    .card i {
+      font-size: 2.5rem;
+      color: var(--green);
+      margin-bottom: 1rem;
+    }
+    
+    .card h3{
+      color:var(--green);
+      margin-bottom: 1rem;
+    }
+    
+    .card p {
+      color: var(--muted);
+    }
+    
+    /* Process Section */
+    .process-steps {
+      counter-reset: step;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .step {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .step:before {
+      counter-increment: step;
+      content: counter(step);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: var(--green);
+      color: white;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: var(--shadow);
+    }
+    
+    .step h4 {
+      color: var(--green);
+      margin-bottom: 1rem;
+    }
+    
+    /* FAQ Section */
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .faq-item {
+      margin-bottom: 1rem;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    
+    .faq-question {
+      background: var(--light);
+      padding: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: var(--transition);
+    }
+    
+    .faq-question:hover {
+      background: #e8f5e9;
+    }
+    
+    .faq-answer {
+      padding: 0 1.2rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    
+    .faq-item.active .faq-answer {
+      padding: 1.2rem;
+      max-height: 500px;
+    }
+    
+    .faq-toggle {
+      transition: var(--transition);
+    }
+    
+    .faq-item.active .faq-toggle {
+      transform: rotate(180deg);
+    }
+    
+    /* Contact Form */
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+    
+    .contact-info {
+      background: var(--light);
+      padding: 2rem;
+      border-radius: var(--radius);
+    }
+    
+    .contact-info h3 {
+      color: var(--green);
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-detail i {
+      color: var(--green);
+      margin-right: 1rem;
+      margin-top: 0.2rem;
+      font-size: 1.2rem;
+    }
+    
+    .contact-form {
+      background: var(--light);
+      padding: 2rem;
+      border-radius: var(--radius);
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--muted);
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #ddd;
+      border-radius: var(--radius);
+      font-family: inherit;
+      transition: var(--transition);
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--green);
+      box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+    }
+    
+    textarea.form-control {
+      min-height: 120px;
+      resize: vertical;
+    }
+    
+    /* Testimonials */
+    .testimonials {
+      background: var(--light);
+    }
+    
+    .testimonial-slider {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .testimonial {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      display: none;
+    }
+    
+    .testimonial.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    
+    .testimonial-text:before, .testimonial-text:after {
+      content: '"';
+      font-size: 3rem;
+      color: var(--green-light);
+      opacity: 0.3;
+      position: absolute;
+    }
+    
+    .testimonial-text:before {
+      top: -1rem;
+      left: -1rem;
+    }
+    
+    .testimonial-text:after {
+      bottom: -2rem;
+      right: -1rem;
+    }
+    
+    .testimonial-author {
+      font-weight: 600;
+      color: var(--green);
+    }
+    
+    .slider-controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      gap: 1rem;
+    }
+    
+    .slider-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #ddd;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    
+    .slider-dot.active {
+      background: var(--green);
+    }
+    
+    /* Footer */
+    footer{
+      padding:3rem 0 1.5rem;
+      background: var(--green);
+      color: white;
+      text-align:center;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    
+    .footer-column h3 {
+      color: white;
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+    }
+    
+    .footer-links {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .footer-links a {
+      color: rgba(255,255,255,0.8);
+      transition: var(--transition);
+    }
+    
+    .footer-links a:hover {
+      color: white;
+      padding-left: 5px;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      transition: var(--transition);
+    }
+    
+    .social-links a:hover {
+      background: var(--orange);
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+    }
+    
+    /* Back to Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      background: var(--orange);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 999;
+      box-shadow: var(--shadow);
+    }
+    
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .back-to-top:hover {
+      background: var(--green);
+      transform: translateY(-5px);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 900px){
+      .links{display:none}
+      .mobile-toggle{display:inline-flex}
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      section {
+        padding: 3rem 0;
+      }
+      
+      .hero {
+        padding: 5rem 0 3rem;
+        min-height: 70vh;
+      }
+      
+      .process-steps {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .step {
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="brand" aria-label="RSM home">
+          <img src="/assets/logo.png" alt="RSM Renewable Energy Solutions Logo" />
+          <span>RSM Renewable Energy</span>
+        </a>
+        <div class="links">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#why">Why Us</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="mobile-toggle">
+          <button class="btn secondary" onclick="toggleMenu()">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Powering a Sustainable Future</h1>
+          <p>Expert Solar Energy and Smart Security Solutions across Tamil Nadu with certified components and reliable service</p>
+          <a class="btn" href="https://wa.me/917305261652?text=Hi%20RSM%2C%20I%27m%20interested%20in%20Solar%20or%20CCTV" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+          <a class="btn secondary" href="#contact">Get a Free Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <p class="sub">We offer comprehensive Solar and CCTV solutions tailored to residential, commercial, and industrial needs</p>
+        </div>
+        <div class="grid services">
+          <div class="card">
+            <i class="fas fa-solar-panel"></i>
+            <h3>Solar Rooftop Systems</h3>
+            <p>On-grid, Hybrid, and Off-grid systems with MNRE/BIS certified components and professional installation.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-video"></i>
+            <h3>CCTV & Security Systems</h3>
+            <p>HD/IP cameras, mobile monitoring, access control, intercom systems for complete property security.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Solar Street & Water Pump</h3>
+            <p>Energy-efficient solar street lighting and water pumps for farms, public spaces, and residential areas.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-tools"></i>
+            <h3>Repairs & AMC</h3>
+            <p>Quarterly maintenance, inverter/panel replacement, camera support, and comprehensive after-sales service.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Process</h2>
+          <p class="sub">We follow a systematic approach to ensure quality and customer satisfaction</p>
+        </div>
+        <div class="process-steps">
+          <div class="step">
+            <h4>Consultation & Site Survey</h4>
+            <p>We assess your energy needs and conduct a thorough site evaluation</p>
+          </div>
+          <div class="step">
+            <h4>Customized Solution Design</h4>
+            <p>We design a system tailored to your specific requirements and budget</p>
+          </div>
+          <div class="step">
+            <h4>Professional Installation</h4>
+            <p>Our certified technicians install your system with precision and care</p>
+          </div>
+          <div class="step">
+            <h4>After-Sales Support</h4>
+            <p>We provide ongoing maintenance and prompt support services</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose Us</h2>
+          <p class="sub">We're committed to delivering quality, reliability, and exceptional customer service</p>
+        </div>
+        <div class="grid services">
+          <div class="card">
+            <i class="fas fa-users"></i>
+            <h3>Expert Team</h3>
+            <p>Our team brings years of hands-on expertise in solar and security systems installation.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-certificate"></i>
+            <h3>Certified Components</h3>
+            <p>We use only Tier-1 solar panels, ISI cables, and reliable CCTV brands with proper certifications.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>Transparent Pricing</h3>
+            <p>No hidden charges, clear BOQ, and straightforward warranty terms for complete peace of mind.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-headset"></i>
+            <h3>Quick Support</h3>
+            <p>Prompt after-sales service and maintenance with quick response times across Tamil Nadu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Clients Say</h2>
+          <p class="sub">Hear from our satisfied customers across Tamil Nadu</p>
+        </div>
+        <div class="testimonial-slider">
+          <div class="testimonial active">
+            <div class="testimonial-text">
+              RSM installed a 5kW solar system for our home in Villupuram. The team was professional, and the system has cut our electricity bills by 80%. Highly recommended!
+            </div>
+            <div class="testimonial-author">- Mr. Rajesh, Villupuram</div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-text">
+              We got CCTV cameras installed for our business in Ulundurpet. The service was prompt, and the cameras provide excellent coverage. Great after-sales support too.
+            </div>
+            <div class="testimonial-author">- Ms. Priya, Ulundurpet</div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-text">
+              The solar water pump installed for our farm has been working perfectly. RSM provided a cost-effective solution that has significantly reduced our operational costs.
+            </div>
+            <div class="testimonial-author">- Mr. Kumar, Agricultural Client</div>
+          </div>
+          <div class="slider-controls">
+            <div class="slider-dot active" data-slide="0"></div>
+            <div class="slider-dot" data-slide="1"></div>
+            <div class="slider-dot" data-slide="2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p class="sub">Find answers to common questions about our solar and CCTV services</p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              What is the typical payback period for a solar installation?
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p>The payback period typically ranges from 3-5 years depending on your energy consumption, system size, and local electricity rates. Commercial installations often have shorter payback periods due to higher consumption.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              Do you provide maintenance services for existing solar systems?
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we offer comprehensive Annual Maintenance Contracts (AMC) for existing solar systems, including cleaning, performance checks, and component replacements if needed.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              Can I monitor my CCTV cameras remotely?
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely! Our modern CCTV systems come with mobile apps that allow you to monitor your property in real-time from anywhere using your smartphone or tablet.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              What areas in Tamil Nadu do you serve?
+              <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+              <p>We provide our services across Tamil Nadu, with a strong presence in Villupuram, Ulundurpet, and surrounding districts. Contact us to check availability in your specific location.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p class="sub">Reach out for a free site survey and consultation anywhere in Tamil Nadu</p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <div class="contact-detail">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone:</strong><br>
+                +91 73052 61652
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email:</strong><br>
+                meharaj.cloudking@gmail.com
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Address:</strong><br>
+                Ulundurpet, Uzhavar Santhai Back Side,<br>
+                Jublee Street, Villupuram – 606107
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-file-alt"></i>
+              <div>
+                <strong>Business Details:</strong><br>
+                GSTIN: 33JUVPM0685K1ZR<br>
+                UDYAM: UDYAM-TN-31-0053523
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="inquiryForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service" class="form-control" required>
+                  <option value="">Select a service</option>
+                  <option value="solar">Solar Installation</option>
+                  <option value="cctv">CCTV Installation</option>
+                  <option value="both">Both Solar & CCTV</option>
+                  <option value="maintenance">Maintenance/Repair</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" placeholder="Tell us about your requirements..."></textarea>
+              </div>
+              <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>RSM Renewable Energy</h3>
+          <p>Providing reliable solar and security solutions across Tamil Nadu with certified components and professional installation.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/917305261652" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#why">Why Choose Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-phone"></i> +91 73052 61652</li>
+            <li><i class="fas fa-envelope"></i> meharaj.cloudking@gmail.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> Ulundurpet, Villupuram</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        © <span id="year"></span> RSM Renewable Energy Solutions. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Mobile menu toggle
+    function toggleMenu() {
+      const links = document.querySelector('.links');
+      if (!links) return;
+      
+      if (links.style.display === 'flex') {
+        links.style.display = 'none';
+      } else {
+        links.style.display = 'flex';
+        links.style.flexDirection = 'column';
+        links.style.gap = '0.4rem';
+        links.style.background = '#fff';
+        links.style.position = 'absolute';
+        links.style.top = '64px';
+        links.style.right = '4%';
+        links.style.border = '1px solid #ddd';
+        links.style.borderRadius = '12px';
+        links.style.padding = '1rem';
+        links.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+        links.style.zIndex = '100';
+      }
+    }
+    
+    // FAQ accordion functionality
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+          }
+        });
+        
+        // Toggle current item
+        item.classList.toggle('active');
+      });
+    });
+    
+    // Testimonial slider
+    const testimonials = document.querySelectorAll('.testimonial');
+    const dots = document.querySelectorAll('.slider-dot');
+    let currentSlide = 0;
+    
+    function showSlide(n) {
+      testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      currentSlide = n;
+      if (currentSlide >= testimonials.length) currentSlide = 0;
+      if (currentSlide < 0) currentSlide = testimonials.length - 1;
+      
+      testimonials[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+    
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        showSlide(index);
+      });
+    });
+    
+    // Auto-advance testimonials
+    setInterval(() => {
+      showSlide(currentSlide + 1);
+    }, 5000);
+    
+    // Back to top button
+    const backToTopBtn = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+    
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Form submission
+    const inquiryForm = document.getElementById('inquiryForm');
+    if (inquiryForm) {
+      inquiryForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const service = document.getElementById('service').value;
+        
+        // Create WhatsApp message
+        const message = `Hi RSM, I'm interested in your services.%0A%0AName: ${name}%0APhone: ${phone}%0AService: ${service}`;
+        
+        // Open WhatsApp with pre-filled message
+        window.open(`https://wa.me/917305261652?text=${message}`, '_blank');
+        
+        // Reset form
+        inquiryForm.reset();
+      });
+    }
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          const links = document.querySelector('.links');
+          if (window.innerWidth <= 900 && links.style.display === 'flex') {
+            toggleMenu();
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
